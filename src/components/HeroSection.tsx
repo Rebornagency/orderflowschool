@@ -1,5 +1,5 @@
 import { ArrowDown } from "lucide-react";
-import bookCover from "@/assets/book-cover.png";
+import heroImage from "@/assets/hero-image.png";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import SocialProofBar from "./SocialProofBar";
@@ -109,34 +109,24 @@ const HeroSection = () => {
             <BeforeAfterGrid />
           </div>
           
-          {/* Right Column - Premium Book Display */}
+          {/* Right Column - Premium Hero Image Display */}
           <div className="flex justify-center lg:justify-end order-first lg:order-last mb-8 lg:mb-0">
             <motion.div 
-              className="relative" 
+              className="relative w-full max-w-[90vw] md:max-w-[600px] lg:max-w-[700px]" 
               style={{ 
-                perspective: '1500px',
                 scale: bookScale,
                 z: bookZ
               }}
             >
-              {/* Core glow behind book */}
+              {/* Core glow behind image */}
               <div className="absolute inset-0 bg-[#F2C14E]/20 blur-[80px] scale-110 animate-pulse" style={{ animationDuration: '4s' }} />
               
-              {/* Enhanced rim-light effect - right edge */}
+              {/* Enhanced glow effect */}
               <div 
-                className="absolute -right-12 top-0 bottom-0 w-24 opacity-70"
+                className="absolute inset-0 opacity-60"
                 style={{
-                  background: 'linear-gradient(90deg, transparent 0%, #F2C14E 50%, #FFD670 100%)',
-                  filter: 'blur(20px)'
-                }}
-              />
-              
-              {/* Top rim light */}
-              <div 
-                className="absolute -top-6 left-0 right-0 h-16 opacity-50"
-                style={{
-                  background: 'linear-gradient(180deg, #F2C14E 0%, transparent 100%)',
-                  filter: 'blur(15px)'
+                  background: 'radial-gradient(circle, #F2C14E 0%, transparent 70%)',
+                  filter: 'blur(40px)'
                 }}
               />
               
@@ -144,12 +134,11 @@ const HeroSection = () => {
               <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 w-3/4 h-12 bg-gradient-to-b from-[#F2C14E]/30 to-transparent blur-2xl rounded-full" />
               
               <img 
-                src={bookCover} 
-                alt="Order Flow Trading System™ - Complete Operating Manual" 
-                className="relative w-full max-w-[120vw] md:max-w-6xl lg:max-w-7xl xl:max-w-8xl transition-all duration-700 hover:scale-[1.03]"
+                src={heroImage} 
+                alt="Order Flow Trading System™ - The Real Edge" 
+                className="relative w-full h-auto transition-all duration-700 hover:scale-[1.03]"
                 style={{
-                  transform: 'rotateY(-5deg) rotateX(2deg)',
-                  filter: 'drop-shadow(0 30px 60px rgba(242, 193, 78, 0.25)) drop-shadow(20px 0 40px rgba(242, 193, 78, 0.4))'
+                  filter: 'drop-shadow(0 20px 40px rgba(242, 193, 78, 0.3)) drop-shadow(0 0 60px rgba(242, 193, 78, 0.2))'
                 }}
               />
             </motion.div>
