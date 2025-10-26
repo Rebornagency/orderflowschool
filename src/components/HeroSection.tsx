@@ -72,7 +72,7 @@ const HeroSection = () => {
                 Learn to trade like Wall Street.
               </p>
               <p className="font-semibold" style={{ color: '#F2C14E' }}>
-                From Retail Confusion to Institutional Confidence.
+                Implement Order Flow into ANY Strategy
               </p>
             </div>
             
