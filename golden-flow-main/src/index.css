@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;500;600&family=Montserrat:wght@600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 5%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 5%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 5%;
+
+    --primary: 0 100% 25%;
+    --primary-foreground: 0 0% 100%;
+    --primary-dark: 0 100% 19%;
+    
+    --gold: 48 28% 90%;
+    --gold-light: 48 28% 95%;
+    --gold-dark: 48 28% 85%;
+    
+    --yellow: 48 96% 53%;
+    --yellow-light: 48 96% 63%;
+    --yellow-dark: 48 96% 43%;
+
+    --secondary: 0 2% 9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 48 20% 94%;
+    --muted-foreground: 0 0% 45%;
+
+    --accent: 48 28% 90%;
+    --accent-foreground: 0 0% 5%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 89%;
+    --input: 0 0% 89%;
+    --ring: 0 68% 30%;
+
+    --radius: 0.75rem;
+    
+    --spotlight: linear-gradient(180deg, hsl(48 28% 90% / 0.3) 0%, hsl(0 100% 25% / 0) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(0 100% 25%) 0%, hsl(0 100% 19%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(48 28% 90%) 0%, hsl(48 28% 85%) 100%);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 5%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 100% 25%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 2% 9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 2% 12%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 48 28% 90%;
+    --accent-foreground: 0 0% 5%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: 48 28% 90%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+  }
+}
+
+@layer utilities {
+  .spotlight-effect {
+    background: var(--spotlight);
+  }
+  
+  .text-gradient {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .bg-gradient-radial {
+    background: radial-gradient(circle, var(--tw-gradient-stops));
+  }
+}
+
+@layer components {
+  .transformation-grid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  @media (min-width: 768px) {
+    .transformation-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .transformation-grid {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  .transformation-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 16.5rem;
+    height: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    border: 1px solid hsl(350 65% 22% / 0.35);
+    background: linear-gradient(
+      180deg,
+      hsl(350 74% 12% / 0.16) 0%,
+      hsl(350 74% 12% / 0.05) 100%
+    );
+    box-shadow: 0 20px 45px hsl(350 85% 6% / 0.3);
+    backdrop-filter: blur(6px);
+    transition: transform 200ms ease, box-shadow 200ms ease;
+  }
+
+  .transformation-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 24px 60px hsl(350 85% 6% / 0.45);
+  }
+
+  .transformation-band {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.75rem;
+    padding: 1.25rem 1.5rem;
+  }
+
+  .transformation-band--before {
+    background-color: hsl(35 68% 95%);
+    border-bottom: 1px solid hsl(350 65% 22% / 0.18);
+    color: hsl(350 65% 18%);
+  }
+
+  .transformation-band--after {
+    background-color: hsl(35 56% 90%);
+    border-top: 3px solid hsl(45 86% 60%);
+    color: hsl(15 76% 12%);
+  }
+
+  .transformation-chip {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    padding: 0.35rem 0.9rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+
+  .transformation-chip--before {
+    background-color: hsl(45 86% 83%);
+    color: hsl(350 68% 20%);
+  }
+
+  .transformation-chip--after {
+    background-color: hsl(45 86% 62%);
+    color: hsl(15 76% 12%);
+  }
+
+  .transformation-text {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .transformation-text--before {
+    color: inherit;
+    font-weight: 500;
+  }
+
+  .transformation-text--after {
+    color: hsl(15 76% 12%);
+    font-weight: 600;
+  }
+}
