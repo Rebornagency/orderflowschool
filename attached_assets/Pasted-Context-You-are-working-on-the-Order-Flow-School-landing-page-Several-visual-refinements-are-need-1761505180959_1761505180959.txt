@@ -1,0 +1,127 @@
+Context:
+
+You are working on the Order Flow School landing page.
+Several visual refinements are needed for consistency, proportion, and readability across devices.
+
+The key areas to update are:
+
+The Before/After transformation boxes on mobile.
+
+The Skills Mastery Grid section (Reading the Tape, Absorption & Exhaustion, Volume Profile Mastery, Footprint Chart Precision, etc.).
+
+The removal of the “Why Learn From Me” section since it is duplicated elsewhere on the page.
+
+No code is required — just clear, structured, design and layout adjustment instructions.
+
+Part 1 – Before/After Section (Mobile)
+Current Issue:
+
+Text on mobile feels slightly small and not perfectly centered.
+
+Uneven spacing from top and bottom edges.
+
+“Before” and “After” labels not equally aligned or emphasized.
+
+Goal:
+
+Make the text larger and absolutely centered — equal spacing top-to-bottom and left-to-right.
+Ensure “AFTER” remains visually dominant (bold) while preserving brand style.
+
+Instructions:
+
+Text Alignment:
+
+Center text both vertically and horizontally inside each container.
+
+Equal spacing from all sides (top, bottom, left, right).
+
+Keep divider line perfectly centered between the “Before” and “After” sections.
+
+Typography:
+
+Increase all text sizes by 20–25% relative to current mobile size.
+
+Maintain Montserrat / Lato font pairing.
+
+Keep “AFTER” label bold and slightly more saturated gold for visual emphasis.
+
+Spacing & Proportion:
+
+Maintain uniform vertical rhythm — all cards the same height.
+
+Add balanced padding for even visual breathing room.
+
+Test at all mobile widths (768, 640, 480 px) to ensure perfect alignment and scaling.
+
+Visual Aesthetic:
+
+Keep ivory background, gold accent lines, and maroon text.
+
+No drop shadows — clean and cinematic.
+
+Part 2 – Skills Mastery Grid (Attached Section)
+Current Issue:
+
+Text in this section appears too small on desktop and mobile.
+
+Headings and body text could use better proportional sizing for readability and emphasis.
+
+Goal:
+
+Increase the overall font size hierarchy for both titles (Reading the Tape, Absorption & Exhaustion, etc.) and descriptions to make them stand out visually and feel more premium.
+
+Instructions:
+
+Typography Scaling:
+
+Increase headings by approximately 15–20% in size.
+
+Increase body text/descriptions by 10–15% for improved readability.
+
+Maintain proportional spacing between headings, text, and numbering circles (01, 02, etc.).
+
+Font Weight & Color:
+
+Keep headings in Montserrat Bold, gold color (#F2C14E).
+
+Descriptions remain Lato Regular or Montserrat Regular in ivory (#F6EDE1).
+
+Layout & Proportion:
+
+Keep equal box dimensions and spacing between all four cards.
+
+Maintain perfect proportionality on desktop and mobile view.
+
+Ensure line length remains readable (avoid text stretching too wide).
+
+Visual Harmony:
+
+Preserve brand palette:
+
+Background: deep maroon (#400000 → #630000 gradient).
+
+Gold headings, ivory body text.
+
+Keep numbering circles (01–04) proportionate and aligned with updated font sizes.
+
+Part 3 – Section Removal
+Instruction:
+
+Completely remove the “Why Learn From Me” section from the landing page.
+
+This section is already covered in another area and currently creates unnecessary repetition.
+
+Ensure its removal does not affect spacing between surrounding sections — padding and transitions should remain visually consistent.
+
+Final Outcome:
+
+The Before/After boxes are perfectly centered, visually balanced, and easy to read on all mobile devices.
+
+The Skills Mastery Grid text is larger, more legible, and cinematic, matching the overall brand tone.
+
+The “Why Learn From Me” section is cleanly removed, resulting in a more focused, professional flow.
+
+All updates maintain full brand identity consistency (maroon, gold, ivory color palette, geometric typography, minimalist aesthetic).
+
+✅ Deliverable Expectation:
+Codex should implement all layout, typography, and proportional adjustments described above — ensuring the mobile and desktop experiences are refined, centered, and consistent with the institutional aesthetic of Order Flow School.

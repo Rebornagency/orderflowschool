@@ -108,10 +108,10 @@ const ValueSection = () => {
                     "radial-gradient(120% 120% at 50% 0%, rgba(242,193,78,0.18) 0%, rgba(242,193,78,0) 65%)"
                 }} />
                 <div className="relative flex flex-col gap-4">
-                  <h3 className="font-['Montserrat',_sans-serif] text-xl font-bold uppercase tracking-[0.3em] text-[#F2C14E] md:text-2xl">
+                  <h3 className="font-['Montserrat',_sans-serif] text-2xl font-bold uppercase tracking-[0.3em] text-[#F2C14E] md:text-3xl">
                     {skill.title}
                   </h3>
-                  <p className="font-['Lato',_sans-serif] text-base leading-relaxed text-[#F6EDE1]/90 md:text-lg">
+                  <p className="font-['Lato',_sans-serif] text-lg leading-relaxed text-[#F6EDE1]/90 md:text-xl">
                     {skill.description}
                   </p>
                 </div>

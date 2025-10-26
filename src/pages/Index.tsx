@@ -1,7 +1,6 @@
 import HeroSection from "@/components/HeroSection";
 import TransformationSection from "@/components/TransformationSection";
 import ValueSection from "@/components/ValueSection";
-import AuthorSection from "@/components/AuthorSection";
 import OfferSection from "@/components/OfferSection";
 import GuaranteeSection from "@/components/GuaranteeSection";
 import TradersSection from "@/components/TradersSection";
@@ -20,7 +19,6 @@ const Index = () => {
       <GuaranteeSection />
       <TradersSection />
       <TestimonialsSection />
-      <AuthorSection />
       <FAQSection />
       <FinalCTASection />
       <StickyBottomBar />
