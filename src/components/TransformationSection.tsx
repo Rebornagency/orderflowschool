@@ -113,7 +113,7 @@ const TransformationSection = () => {
                 <div className="flex flex-1 flex-col">
                   {/* Before row */}
                   <div
-                    className="flex min-h-[132px] items-start gap-4 border-b px-6 py-5"
+                    className="flex min-h-[132px] items-center justify-center flex-col gap-3 border-b px-6 py-6 text-center"
                     style={{
                       backgroundColor: '#FFF7EC',
                       borderBottomColor: 'rgba(92, 26, 23, 0.18)'
@@ -130,7 +130,7 @@ const TransformationSection = () => {
                       BEFORE
                     </span>
                     <p
-                      className="text-base font-medium leading-relaxed"
+                      className="text-lg md:text-xl font-medium leading-relaxed"
                       style={{ color: '#5C1A17' }}
                     >
                       {item.before}
@@ -147,7 +147,7 @@ const TransformationSection = () => {
 
                   {/* After row */}
                   <div
-                    className="flex min-h-[132px] flex-1 items-start gap-4 border-t px-6 py-5"
+                    className="flex min-h-[132px] flex-1 items-center justify-center flex-col gap-3 border-t px-6 py-6 text-center"
                     style={{
                       backgroundColor: '#F6EDE1',
                       borderTopColor: 'rgba(242, 193, 78, 0.45)'
@@ -164,7 +164,7 @@ const TransformationSection = () => {
                       AFTER
                     </span>
                     <p
-                      className="text-base font-semibold leading-relaxed text-[#1C0A0A]"
+                      className="text-lg md:text-xl font-semibold leading-relaxed text-[#1C0A0A]"
                     >
                       {item.after}
                     </p>

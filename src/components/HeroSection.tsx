@@ -112,7 +112,7 @@ const HeroSection = () => {
           {/* Right Column - Premium Hero Image Display */}
           <div className="flex justify-center lg:justify-end order-first lg:order-last mb-8 lg:mb-0">
             <motion.div 
-              className="relative w-full max-w-[90vw] md:max-w-[600px] lg:max-w-[700px]" 
+              className="relative w-full max-w-[95vw] md:max-w-[700px] lg:max-w-[850px] xl:max-w-[900px]" 
               style={{ 
                 scale: bookScale,
                 z: bookZ
