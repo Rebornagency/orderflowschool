@@ -8,20 +8,20 @@ const BeforeAfterGrid = () => {
 
   const transformations = [
     {
-      before: "Stopped out before the real move",
-      after: "Enter after smart money with precision"
+      before: "Inconsistent results",
+      after: "Consistent execution aligned to prop-firm rules"
     },
     {
-      before: "Chasing fake breakouts",
-      after: "Spot exhaustion & avoid traps (footprint)"
+      before: "Constantly Losing",
+      after: "Consistently Profitable"
     },
     {
       before: "Guessing entries",
       after: "Checklist entries with institutional clarity"
     },
     {
-      before: "Inconsistent results",
-      after: "Consistent execution aligned to prop-firm rules"
+      before: "Stopped out before the real move",
+      after: "Enter after smart money with precision"
     }
   ];
 

@@ -70,7 +70,7 @@ const ValueSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isHeaderInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-              className="font-['Montserrat',_sans-serif] text-3xl font-bold tracking-[0.08em] text-[#F2C14E] drop-shadow-[0_2px_12px_rgba(0,0,0,0.45)] md:text-5xl"
+              className="font-['Montserrat',_sans-serif] text-4xl font-bold tracking-[0.08em] text-[#F2C14E] drop-shadow-[0_2px_12px_rgba(0,0,0,0.45)] md:text-5xl lg:text-6xl"
             >
               Master the Skills That Make You Unshakable.
             </motion.h2>
@@ -78,7 +78,7 @@ const ValueSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isHeaderInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
-              className="mx-auto max-w-3xl font-['Montserrat',_sans-serif] text-lg leading-relaxed text-[#F6EDE1] md:text-xl"
+              className="mx-auto max-w-3xl font-['Montserrat',_sans-serif] text-xl leading-relaxed text-[#F6EDE1] md:text-2xl lg:text-2xl"
             >
               Learn to trade like Wall Street professionals — and integrate order flow into ICT, Smart Money, Price Action, or
               Supply &amp; Demand strategies.

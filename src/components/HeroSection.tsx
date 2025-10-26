@@ -85,7 +85,7 @@ const HeroSection = () => {
                   boxShadow: 'inset 0 2px 4px rgba(0,0,0,0.15), 0 6px 30px rgba(242, 193, 78, 0.4), 0 0 60px rgba(242, 193, 78, 0.2)'
                 }}
               >
-                <span className="relative z-10">Get the Order Flow System Now</span>
+                <span className="relative z-10">Get Instant Access Now</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700" />
               </button>
               
@@ -93,7 +93,7 @@ const HeroSection = () => {
                 onClick={handleSecondaryCTA}
                 className="h-[60px] w-full bg-transparent border-2 border-[#F2C14E] text-[#F2C14E] hover:bg-[#F2C14E]/[0.15] font-bold rounded-lg text-base md:text-lg transition-all duration-300 hover:shadow-[0_0_30px_rgba(242,193,78,0.3)]"
               >
-                Show Me the Operating System →
+                What You Will Learn →
               </button>
               
               {/* Divider and proof row */}
@@ -112,7 +112,7 @@ const HeroSection = () => {
           {/* Right Column - Premium Hero Image Display */}
           <div className="flex justify-center lg:justify-end order-first lg:order-last mb-8 lg:mb-0">
             <motion.div 
-              className="relative w-full max-w-[95vw] md:max-w-[700px] lg:max-w-[850px] xl:max-w-[900px]" 
+              className="relative w-full max-w-[98vw] md:max-w-[800px] lg:max-w-[950px] xl:max-w-[1050px]" 
               style={{ 
                 scale: bookScale,
                 z: bookZ
